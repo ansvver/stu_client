@@ -6,8 +6,9 @@ import static java.lang.Thread.sleep;
 
 public class ImageSender {
     int port = 8821;
-    //String ip = "115.159.110.34";
-    String ip = "localhost";
+    String ip = "vps.yabuhoo.com";
+//    String ip = "115.159.110.34";
+//    String ip = "localhost";
 
     void send(String filePath) {
         Socket s = null;
@@ -54,6 +55,6 @@ public class ImageSender {
     }
 
     public static void main(String arg[]) {
-        new ImageSender().send("C:\\Program Files\\Git\\workspace\\stu\\pic\\18.png");
+        new ImageSender().send("test_img\\1447915774496.png");
     }
 }
